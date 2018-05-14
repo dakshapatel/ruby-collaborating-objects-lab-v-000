@@ -43,7 +43,7 @@ def self.create_by_name(name)
 end
 
 
-def add_song(songs)
+def add_song(song)
 @songs.push(song) unless @songs.include?(song)
 song.artist = self unless song.artist == self
 end
