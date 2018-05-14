@@ -4,16 +4,15 @@ attr_accessor :path
 
 def initialize(path)
   @path = path
-
 end
 
 def files
-  Dir.entries(path).reject{|f| f == ',' || f == '..'}
+  Dir.entries(path).reject{|f| f == '.' || f == '..'}
 end
 
 
 def imports
-  files.each{|f| Song.new_by_filename(f)}
+  files.each {|f| Song.new_by_filename(f)}
 end
 
 end
