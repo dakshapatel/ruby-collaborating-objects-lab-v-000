@@ -15,8 +15,12 @@ def add_song(songs)
 @songs << songs
 end
 
+def self.all
+
+end
+
 def save
-  @@all << name
+  @@all << self
 end
 
 def self.find_or_create_by_name
