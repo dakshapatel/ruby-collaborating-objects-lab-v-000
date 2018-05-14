@@ -24,7 +24,7 @@ end
 
 # finds or creates an artist by name
 def self.find_or_create_by_name(name)
-  self.find_by_name(names) || self.create_by_name(name)
+  self.find_by_name(name) || self.create_by_name(name)
 end
 
 #method for self.find_by_name(names)
