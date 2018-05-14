@@ -12,11 +12,6 @@ def add_song(songs)
 @songs << songs
 end
 
-def songs(s)
-  s = Song.new(s)
-
-end
-
 def save
 
 end
