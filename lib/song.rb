@@ -4,6 +4,7 @@ attr_accessor :name, :artist
 
 def initialize(name)
 @name = name
+#  sets the artist object to belong to the song
 @artist = nil
 end
 
