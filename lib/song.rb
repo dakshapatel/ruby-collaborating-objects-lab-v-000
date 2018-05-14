@@ -15,7 +15,7 @@ def artist=(artist)
 end
 
 def self.new_by_filename(filename)
-
+  artist_name, song_name, genre_name = filename.chomp(".mps3").split(" - ")
 end
 
 end
