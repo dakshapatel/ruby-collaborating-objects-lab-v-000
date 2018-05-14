@@ -8,7 +8,7 @@ def initialize(path)
 end
 
 def files
-
+  Dir.entries(path).reject{|f| f == ',' || f == '..'}
 end
 
 
