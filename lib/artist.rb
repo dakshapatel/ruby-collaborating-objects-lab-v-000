@@ -36,7 +36,9 @@ end
 
 # method for self.create_by_name(name)
 def self.create_by_name(name)
-  #
+  #artist = self.new(name)
+  #artist.save
+  #artist
   self.new(name).save
 end
 # adds the artist instance to the @@all class variable
