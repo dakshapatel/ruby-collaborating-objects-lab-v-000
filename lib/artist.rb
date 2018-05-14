@@ -23,12 +23,12 @@ end
 
 
 # finds or creates an artist by name
-def self.find_or_create_by_name(artist_name)
+def self.find_or_create_by_name(name)
   self.find_by_name(names) || self.create_by_name(name)
 end
 
 #method for self.find_by_name(names)
-def self.find_by_name(names)
+def self.find_by_name(name)
   #look through the @@all array and find the artist
   @@all.find do |artist|
     artist.name == name
