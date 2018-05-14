@@ -20,12 +20,7 @@ def self.all
 @@all
 end
 
-# adds the artist instance to the @@all class variable
-def save
-  @@all << self
-  self
 
-end
 
 # finds or creates an artist by name
 def self.find_or_create_by_name(artist_name)
@@ -41,7 +36,13 @@ end
 
 # method for self.create_by_name(name)
 def self.create_by_name(name)
-  artist = self.new(name)
+  #
+  self.new(name).save
+end
+# adds the artist instance to the @@all class variable
+def save
+  @@all << self
+  self
 end
 
 def print_songs
