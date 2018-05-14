@@ -34,7 +34,9 @@ end
 
 #method for self.find_by_name(names)
 def self.find_by_name(names)
-
+  #look through the @@all array and find the artist
+  @@all.find do |artist|
+    artist.name == name
 end
 
 # method for self.create_by_name(name)
