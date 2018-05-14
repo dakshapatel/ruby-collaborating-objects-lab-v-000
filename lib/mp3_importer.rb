@@ -5,7 +5,7 @@ attr_accessor :path
 def initialize
   @path = path
 
-end 
+end
 
 def mP3Importer_files
 
@@ -14,3 +14,4 @@ end
 
 def mP3Importer_imports
 end
+end 
