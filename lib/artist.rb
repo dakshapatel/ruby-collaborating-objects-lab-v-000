@@ -2,7 +2,7 @@ class Artist
 
   attr_accessor :name
 
-
+@@all = []
 def initialize (name)
   @name = name
 end
@@ -21,6 +21,6 @@ end
 
 def print_songs
 
-end 
+end
 
 end
