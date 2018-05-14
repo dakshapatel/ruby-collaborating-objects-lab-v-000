@@ -12,10 +12,7 @@ end
 @@all = []
 #for the artist, need to add an associated song
 #associated method (public method)
-def add_song(songs)
-@songs << songs unless @songs.include?(song)
-song.artist = self unless song.artist == self
-end
+
 
 def self.all
 @@all
@@ -43,6 +40,12 @@ def self.create_by_name(name)
   #artist.save
   #artist
   self.new(name).save
+end
+
+
+def add_song(songs)
+@songs.push(song) unless @songs.include?(song)
+song.artist = self unless song.artist == self
 end
 # adds the artist instance to the @@all class variable
 def save
