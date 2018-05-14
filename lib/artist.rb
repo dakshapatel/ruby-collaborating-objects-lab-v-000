@@ -41,7 +41,7 @@ end
 
 # method for self.create_by_name(name)
 def self.create_by_name(name)
-
+  artist = self.new(name)
 end
 
 def print_songs
