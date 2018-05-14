@@ -36,6 +36,7 @@ def self.find_by_name(name)
 end
 
 # method for self.create_by_name(name)
+#creates a new instance of Artist if none exists
 def self.create_by_name(name)
   #artist = self.new(name)
   #artist.save
@@ -49,6 +50,8 @@ def save
 end
 
 def print_songs
+#print out the name
+@songs.each{|s| puts s.name}
 
 end
 
