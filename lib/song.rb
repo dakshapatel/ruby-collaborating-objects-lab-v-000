@@ -11,7 +11,7 @@ end
 
 def artist=(artist)
   @artist = artist
-  artist.add_song(self)  unless artist.songs.inlcude?(self)
+  artist.add_song(self) unless artist.songs.inlcude?(self)
 end
 
 def self.new_by_filename(filename)
