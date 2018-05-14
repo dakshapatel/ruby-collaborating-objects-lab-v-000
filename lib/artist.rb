@@ -27,14 +27,17 @@ def save
 
 end
 
+# finds or creates an artist by name
 def self.find_or_create_by_name(artist_name)
   self.find_by_name(names) || self.create_by_name(name)
 end
 
+#method for self.find_by_name(names)
 def self.find_by_name(names)
 
 end
 
+# method for self.create_by_name(name)
 def self.create_by_name(name)
 
 end
