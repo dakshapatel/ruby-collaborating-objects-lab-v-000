@@ -13,7 +13,8 @@ end
 #for the artist, need to add an associated song
 #associated method (public method)
 def add_song(songs)
-@songs << songs
+@songs << songs unless @songs.include?(song)
+song.artist = self
 end
 
 def self.all
