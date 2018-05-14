@@ -8,6 +8,17 @@ def initialize(name)
 # starts off empty to set it equal to nil
 @artist = nil
 end
+@@all = []
+
+def self.all
+  @@all
+end
+
+def save
+  @@all << self
+  self
+end
+
 
 def artist=(artist)
   @artist = artist
