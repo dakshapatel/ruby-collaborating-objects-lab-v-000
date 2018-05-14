@@ -14,7 +14,7 @@ end
 #associated method (public method)
 def add_song(songs)
 @songs << songs unless @songs.include?(song)
-song.artist = self
+song.artist = self unless song.artist == self
 end
 
 def self.all
